@@ -1,0 +1,339 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة ليدار العقارية | العرض التقديمي</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- شريط التقدم العلوي -->
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <div class="presentation-wrapper">
+    
+    <!-- الترويسة العلوية -->
+    <header class="top-bar">
+      <div class="brand">
+        <span class="brand-logo"><i class="fa-solid fa-layer-group"></i></span>
+        <div class="brand-text">
+          <h2>لـيـدار العقارية</h2>
+          <span>LIDAR REAL ESTATE</span>
+        </div>
+      </div>
+      <div class="top-controls">
+        <span class="slide-counter" id="slideCounter">01 / 08</span>
+        <button class="icon-btn" id="fullscreenBtn" title="ملء الشاشة">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- منطقة عرض الشرائح -->
+    <main class="slides-viewport">
+
+      <!-- شريحة 1: الغلاف والافتتاحية -->
+      <section class="slide active" data-index="0">
+        <div class="slide-content hero-slide">
+          <div class="badge"><i class="fa-solid fa-gem"></i> ملف التعريف الاستثماري 2026</div>
+          <h1 class="hero-title">نبتكر مجتمعاتٍ تفوق التطلعات</h1>
+          <p class="hero-desc">
+            تطوير عقاري نوعي يدمج بين حداثة التصميم الهندسي واستدامة جودة الحياة، لنصنع مساحات تنبض بالحيوية والأثر الاستثماري الملموس.
+          </p>
+          <div class="hero-tags">
+            <span><i class="fa-solid fa-city"></i> تطوير عمراني متكامل</span>
+            <span><i class="fa-solid fa-chart-line"></i> عوائد استثمارية واعدة</span>
+            <span><i class="fa-solid fa-shield-halved"></i> معايير هندسية متقدمة</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- شريحة 2: الرؤية والرسالة -->
+      <section class="slide" data-index="1">
+        <div class="slide-content">
+          <span class="section-tag">الهوية المؤسسية</span>
+          <h2 class="slide-heading">رؤيتنا ورسالتنا</h2>
+          <div class="grid-two">
+            <div class="glass-card">
+              <div class="card-icon"><i class="fa-solid fa-compass"></i></div>
+              <h3>الرؤية</h3>
+              <p>
+                أن نكون الوجهة الأولى والموثوقة في قيادة التحول الحضري وصياغة مفاهيم التطوير العقاري الحديث في المملكة، عبر تقديم مشاريع استثنائية تواكب أعلى المعايير العالمية.
+              </p>
+            </div>
+            <div class="glass-card">
+              <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+              <h3>الرسالة</h3>
+              <p>
+                تطوير بيئات سكنية وتجارية متكاملة تتناغم مع تطلعات عملائنا ومستثمرينا، مع الالتزام بالشفافية والابتكار وتطبيق أحدث ممارسات الاستدامة البيئية والبناء الحديث.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- شريحة 3: مجالات العمل والخدمات (قابلة للنقر) -->
+      <section class="slide" data-index="2">
+        <div class="slide-content">
+          <span class="section-tag">قطاعات الأعمال</span>
+          <h2 class="slide-heading">خدماتنا ومجالات الاستثمار <span class="hint-text">(انقر على أي بطاقة للتفاصيل)</span></h2>
+          <div class="services-grid">
+            <div class="service-card clickable-card" data-details-id="service-dev">
+              <div class="click-hint"><i class="fa-solid fa-circle-info"></i> التفاصيل</div>
+ <div class="service-icon"><i class="fa-solid fa-city"></i></div>
+              <h4>التطوير العقاري الشامل</h4>
+              <p>تخطيط وبناء المجمعات السكنية والمراكز التجارية المتكاملة من الفكرة حتى التسليم.</p>
+            </div>
+
+            <div class="service-card clickable-card" data-details-id="service-assets">
+              <div class="click-hint"><i class="fa-solid fa-circle-info"></i> التفاصيل</div>
+              <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <h4>إدارة وتنمية الأصول</h4>
+              <p>تعظيم القيمة السوقية للعقارات وتشغيل المحافظ الاستثمارية بكفاءة تشغيلية عالية.</p>
+            </div>
+
+            <div class="service-card clickable-card" data-details-id="service-arch">
+              <div class="click-hint"><i class="fa-solid fa-circle-info"></i> التفاصيل</div>
+              <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+              <h4>الهندسة والتصميم المعماري</h4>
+              <p>ابتكار حلول هندسية وتصاميم حديثة تلبي متطلبات البناء المستدام وجودة الحياة.</p>
+            </div>
+
+            <div class="service-card clickable-card" data-details-id="service-consult">
+              <div class="click-hint"><i class="fa-solid fa-circle-info"></i> التفاصيل</div>
+              <div class="service-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+              <h4>الاستشارات والدراسات</h4>
+              <p>تقديم دراسات الجدوى المتخصصة وتحليل السوق لدعم قرارات الاستحواذ والتطوير.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- شريحة 4: مؤشرات وأرقام الإنجاز (قابلة للنقر) -->
+      <section class="slide" data-index="3">
+        <div class="slide-content">
+          <span class="section-tag">مسيرة النجاح</span>
+          <h2 class="slide-heading">ليدار في أرقام وحقائق <span class="hint-text">(انقر للاطلاع على المنجزات)</span></h2>
+          <div class="stats-grid">
+            <div class="stat-card clickable-card" data-details-id="stat-projects">
+              <div class="click-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> عرض المشاريع</div>
+              <span class="stat-number">+18</span>
+              <span class="stat-label">مشروعاً تم إنجازه وتسليمه</span>
+            </div>
+
+            <div class="stat-card clickable-card" data-details-id="stat-area">
+              <div class="click-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> توزيع المساحات</div>
+              <span class="stat-number">450K+</span>
+              <span class="stat-label">متر مربع مساحة مطورة</span>
+            </div>
+
+            <div class="stat-card clickable-card" data-details-id="stat-val">
+              <div class="click-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> المحفظة المالية</div>
+              <span class="stat-number">1.4B</span>
+              <span class="stat-label">ريال سعودي القيمة الاستثمارية</span>
+            </div>
+
+            <div class="stat-card clickable-card" data-details-id="stat-satisfaction">
+              <div class="click-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> تقارير الجودة</div>
+              <span class="stat-number">98%</span>
+              <span class="stat-label">نسبة رضا المستثمرين والعملاء</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- شريحة 5: ركائز التميز -->
+      <section class="slide" data-index="4">
+        <div class="slide-content">
+          <span class="section-tag">لماذا ليدار؟</span>
+          <h2 class="slide-heading">ركائز التميز الاستراتيجي</h2>
+          <div class="pillars-grid">
+            <div class="pillar-box">
+              <i class="fa-solid fa-drafting-compass"></i>
+              <h4>عمارة معاصرة</h4>
+              <p>تصاميم توازن بدقة بين الجمالية البصرية وسلاسة الاستخدام الوظيفي للمساحات.</p>
+ </div>
+            <div class="pillar-box">
+              <i class="fa-solid fa-leaf"></i>
+              <h4>استدامة وكفاءة</h4>
+              <p>تطبيق معايير البناء الأخضر لتقليل الهدر الطاقي والحفاظ على جودة الأصول.</p>
+            </div>
+            <div class="pillar-box">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4>مواقع استراتيجية</h4>
+              <p>دراسة دقيقة لحركة النمو العمراني لضمان انتقاء أكثر المواقع تميزاً وجدوى.</p>
+            </div>
+            <div class="pillar-box">
+              <i class="fa-solid fa-handshake-angle"></i>
+              <h4>التزام بالمواعيد</h4>
+              <p>حوكمة تنفيذية صارمة تضمن تسليم المشاريع وفق الجداول المحددة بأعلى مقاييس الجودة.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- شريحة 6: نماذج المشاريع (قابلة للنقر) -->
+      <section class="slide" data-index="5">
+        <div class="slide-content">
+          <span class="section-tag">محفظة الأصول</span>
+          <h2 class="slide-heading">نماذج من مشاريعنا الرائدة <span class="hint-text">(انقر لمعاينة المشروع)</span></h2>
+          <div class="projects-grid">
+            <div class="project-card clickable-card" data-details-id="project-residence">
+              <div class="project-header">
+                <span class="project-type">سكني فاخر</span>
+                <i class="fa-solid fa-house-chimney-window"></i>
+              </div>
+              <h3>مجمع ليدار ريزيدنس</h3>
+              <p>مجتمع سكني متكامل يضم فلل وتاون هاوس بأنماط معمارية فريدة وحدائق خاصة.</p>
+              <div class="project-meta">
+                <span><i class="fa-solid fa-maximize"></i> 85,000 م²</span>
+                <span><i class="fa-solid fa-check"></i> جاهز للتسليم</span>
+              </div>
+            </div>
+
+            <div class="project-card clickable-card" data-details-id="project-business">
+              <div class="project-header">
+                <span class="project-type">مكتبي تجاري</span>
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <h3>ليدار بزنس أفينيو</h3>
+              <p>أبراج مكتبية ذكية مصممة لتستوعب مقرات كبرى الشركات مع خدمات ومرافق متطورة.</p>
+              <div class="project-meta">
+                <span><i class="fa-solid fa-maximize"></i> 40,000 م²</span>
+                <span><i class="fa-solid fa-spinner"></i> قيد التطوير</span>
+              </div>
+            </div>
+
+            <div class="project-card clickable-card" data-details-id="project-oasis">
+              <div class="project-header">
+                <span class="project-type">متعدد الاستخدامات</span>
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <h3>واحة ليدار سنتر</h3>
+              <p>وجهة مفتوحة للتسوق والمطاعم والمساحات الترفيهية لتخدم الأحياء المحيطة.</p>
+              <div class="project-meta">
+                <span><i class="fa-solid fa-maximize"></i> 62,000 م²</span>
+                <span><i class="fa-solid fa-check"></i> مكتمل</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- شريحة 7: الفروع والانتشار الجغرافي (قابلة للنقر) -->
+      <section class="slide" data-index="6">
+        <div class="slide-content">
+          <span class="section-tag">شبكة الفروع</span>
+          <h2 class="slide-heading">فروعنا والانتشار الجغرافي <span class="hint-text">(انقر لمعرفة نطاق الفرع)</span></h2>
+          <div class="branches-grid">
+            <div class="branch-card main-branch clickable-card" data-details-id="branch-riyadh">
+              <div class="branch-badge">المقر الرئيسي</div>
+              <div class="branch-icon"><i class="fa-solid fa-building-flag"></i></div>
+              <h3>الرياض</h3>
+              <p class="branch-location"><i class="fa-solid fa-map-pin"></i> طريق الملك فهد - حي العليا</p>
+              <span class="branch-role">إدارة العمليات والتطوير العام</span>
+            </div>
+ <div class="branch-card clickable-card" data-details-id="branch-jeddah">
+              <div class="branch-badge">المنطقة الغربية</div>
+              <div class="branch-icon"><i class="fa-solid fa-city"></i></div>
+              <h3>جدة</h3>
+              <p class="branch-location"><i class="fa-solid fa-map-pin"></i> طريق الملك عبد العزيز - حي الشاطئ</p>
+              <span class="branch-role">المشاريع الساحلية والتجارية</span>
+            </div>
+
+            <div class="branch-card clickable-card" data-details-id="branch-khobar">
+              <div class="branch-badge">المنطقة الشرقية</div>
+              <div class="branch-icon"><i class="fa-solid fa-landmark"></i></div>
+              <h3>الخبر</h3>
+              <p class="branch-location"><i class="fa-solid fa-map-pin"></i> طريق الأمير فيصل بن فهد</p>
+              <span class="branch-role">المجمعات السكنية والمكتبية</span>
+            </div>
+
+            <div class="branch-card clickable-card" data-details-id="branch-makkah">
+              <div class="branch-badge">المنطقة الغربية المقدسة</div>
+              <div class="branch-icon"><i class="fa-solid fa-hotel"></i></div>
+              <h3>مكة المكرمة</h3>
+              <p class="branch-location"><i class="fa-solid fa-map-pin"></i> طريق الدائري الثالث</p>
+              <span class="branch-role">تطوير مشاريع الضيافة والفندقة</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- شريحة 8: التواصل والاستثمار -->
+      <section class="slide" data-index="7">
+        <div class="slide-content contact-slide">
+          <span class="section-tag">الشراكة والفرص</span>
+          <h2 class="slide-heading">لنصنع المستقبل العمراني معاً</h2>
+          <p class="contact-desc">
+            يسر فريق إدارة الاستثمار العقاري في شركة ليدار تقديم الاستشارات وبحث فرص الشراكات الاستراتيجية عبر كافة فروعنا.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+966 11 000 0000</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>invest@lidar-re.sa</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-globe"></i>
+              <span>www.lidar-re.sa</span>
+            </div>
+          </div>
+          <div class="footer-note">شركة ليدار للاستثمار والتطوير العقاري — جميع الحقوق محفوظة 2026</div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- شريط التحكم السفلي -->
+    <footer class="bottom-bar">
+      <button class="nav-btn" id="prevBtn">
+        <i class="fa-solid fa-arrow-right"></i> السابق
+      </button>
+
+      <div class="dots-container" id="dotsContainer"></div>
+
+      <button class="nav-btn" id="nextBtn">
+        التالي <i class="fa-solid fa-arrow-left"></i>
+      </button>
+    </footer>
+
+  </div>
+
+  <!-- نافذة التفاصيل المنبثقة التفاعلية (Modal) -->
+  <div class="modal-overlay" id="detailsModal">
+    <div class="modal-container">
+      <button class="modal-close" id="modalCloseBtn" title="إغلاق">&times;</button>
+      
+      <div class="modal-media">
+        <img id="modalImg" src="" alt="تفاصيل المعاينة">
+        <div class="modal-tag-badge" id="modalTag">تصنيف</div>
+      </div>
+
+      <div class="modal-body">
+        <h3 id="modalTitle">عنوان العنصر</h3>
+        <p id="modalDesc">شرح وتفاصيل العنصر المختار...</p>
+        
+        <div class="modal-highlights">
+          <h4>أبرز المواصفات والميزات:</h4>
+          <ul id="modalList"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
